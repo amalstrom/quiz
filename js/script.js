@@ -3,18 +3,31 @@
 $(document).ready(function() {
     $("button").click(function() {
         var name = $("#name").val();
-        var finalAnswer = "TBD";
-        var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
+
         var q1Input = $("#question1").val();
         var q2Input = $("#question2").val();
         var q3Input = $("#question3").val();
+
         var totalScore = codenameCalculator(q1Input) +
             saturdayCalculator(q2Input) +
             foodCalculator(q3Input);
 
+        var finalAnswer = characterPicker(totalScore);
         displayOutput(name, finalAnswer);
     });
 });
+
+function characterPicker(totalScore) {
+    if (totalScore <= 4) {
+        return "Josh";
+    } else if (totalScore <= 6) {
+        return "CJ";
+    } else if (totalScore <= 9) {
+        return "Sam";
+    } else {
+        return "Toby";
+    }
+}
 
 function displayOutput(name, output) {
     var result = "Congratulations " + name + ", you got: " + output;
