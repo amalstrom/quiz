@@ -4,13 +4,13 @@ $(document).ready(function() {
     $("button").click(function() {
         var name = $("#name").val();
 
-        var q1Input = $("#question1").val();
-        var q2Input = $("#question2").val();
-        var q3Input = $("#question3").val();
+        var codenameInput = $("#codename").val();
+        var saturdayInput = $("#saturday").val();
+        var foodInput = $("#food").val();
 
-        var totalScore = codenameCalculator(q1Input) +
-            saturdayCalculator(q2Input) +
-            foodCalculator(q3Input);
+        var totalScore = codenameCalculator(codenameInput) +
+            saturdayCalculator(saturdayInput) +
+            foodCalculator(foodInput);
 
         var finalAnswer = characterPicker(totalScore);
         displayOutput(name, finalAnswer);
