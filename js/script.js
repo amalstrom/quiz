@@ -18,13 +18,13 @@ $(document).ready(function() {
 
 function codenameCalculator(codename) {
     console.log("codename:");
-    if (codename.length() <= 5) {
+    if (codename.length <= 5) {
         console.log("Josh");
         return 1;
-    } else if (codename.length() <= 8) {
+    } else if (codename.length <= 8) {
         console.log("CJ");
         return 2;
-    } else if (codename.length() <= 10) {
+    } else if (codename.length <= 10) {
         console.log("Sam");
         return 3;
     } else {
