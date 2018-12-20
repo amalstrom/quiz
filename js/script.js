@@ -12,9 +12,14 @@ $(document).ready(function() {
             saturdayCalculator(q2Input) +
             foodCalculator(q3Input);
 
-        console.log(totalScore);
+        displayOutput(name, finalAnswer);
     });
 });
+
+function displayOutput(name, output) {
+    var result = "Congratulations " + name + ", you got: " + output;
+    $(".result").html(result);
+}
 
 function codenameCalculator(codename) {
     console.log("codename:");
