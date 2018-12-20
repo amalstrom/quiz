@@ -55,3 +55,7 @@ body{
 
     margin-left:20px;
 }
+
+input {
+    width: 300px;
+}
