@@ -12,7 +12,7 @@ $(document).ready(function() {
             saturdayCalculator(q2Input) +
             foodCalculator(q3Input);
 
-        console.log((totalScore);
+        console.log(totalScore);
     });
 });
 
